@@ -1,8 +1,24 @@
-version: "3.9"
-
+name: dani-developer
 services:
+  backend:
+    image: mcr.microsoft.com/dotnet/sdk:8.0 
+    container_name: validacao-backend
+    volumes:
+      - ./:/app
+    working_dir: /app/validacao
+    ports:
+      - 8001:5259
+    command: dotnet run
+    networks:
+      - dani-development
+
   frontend:
     build: validacao-frontend
     container_name: validacao-ui
     ports:
-      - "3000:80"
+      - 3000:80
+    networks:
+      - dani-development
+
+networks:
+  dani-development:
