@@ -89,3 +89,6 @@ A porta externa pode ser alterada via Docker.
 ```bash
 -p 8081:8080
 ```
+## Contribuição
+- [![GitHub](https://img.shields.io/badge/GitHub-DanielaVelter-black?logo=github)](https://github.com/Daniela2319)
+- [![GitHub](https://img.shields.io/badge/GitHub-Guilhermed'Almeida-black?logo=github)](https://github.com/gbad8)
